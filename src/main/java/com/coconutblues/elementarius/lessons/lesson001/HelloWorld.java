@@ -6,7 +6,9 @@ package com.coconutblues.elementarius.lessons.lesson001;
  * This lesson is designed to introduce you to Java.
  * Implement all the methods below and run the unit tests in {@link HelloWorldTest}
  * 
- *
+ * @see <a href="http://en.wikipedia.org/wiki/String_(computer_science)">String</a>
+ * @see <a href="http://en.wikipedia.org/wiki/Control_flow#Loops">Loops</a>
+ * @see <a href="http://en.wikipedia.org/wiki/Control_flow#If-then-.28else.29_statements">if-then-else statements</a>
  */
 public class HelloWorld {
 
