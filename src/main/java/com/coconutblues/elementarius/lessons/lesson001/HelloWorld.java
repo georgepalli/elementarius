@@ -19,7 +19,7 @@ public class HelloWorld {
 	public String sayHello() {
 		
 		// Replace the return null statement with your solution.
-		return null;
+		return "Hello!";
 	}
 	
 	/**
@@ -36,8 +36,10 @@ public class HelloWorld {
 	 * @return
 	 */
 	public String sayHello(String name) {
-		// Replace the return null statement with your solution.
-		return null;
+		if(name == null || "".equals(name)) {
+			return "Hello!";
+		}
+		return "Hello " + name + "!";
 	}
 	
 	/**
@@ -45,8 +47,11 @@ public class HelloWorld {
 	 * @return
 	 */
 	public String sayHelloTenTimes(){
-		// Replace the return null statement with your solution.
-		return null;
+		String hello = "";
+		for(int i=0; i<10; ++i) {
+			hello = hello + "Hello!\n";
+		}
+		return hello;
 	}
 	
 	/**
@@ -61,9 +66,12 @@ public class HelloWorld {
 	 * @return
 	 */
 	public String sayHelloNTimes(int numberOfTimes) {
-		// Replace the return null statement with your solution.
-		return null;
-	}
+		String hello = "";
+		for(int i = 0; i< numberOfTimes; ++i) {
+			hello = hello + "Hello!\n";
+		}
+		return hello;
+	}	
 	
 	
 	/**
@@ -78,8 +86,16 @@ public class HelloWorld {
 	 * @return
 	 */
 	public String sayHelloNTimes(String name, int numberOfTimes){
-		// Replace the return null statement with your solution.
-		return null;
+		String hello = "";
+		for(int i = 0; i< numberOfTimes; ++i) {
+			if(name == null || "".equals(name)) {
+				hello = hello + "Hello!\n";
+			} else {
+				hello = hello + "Hello " + name + "!\n";
+			}
+		}
+		return hello;
+	
 	}
 
 }
