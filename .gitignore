@@ -1,1 +1,5 @@
 # gitgnore
+/build/
+/bin/
+.gradle
+.settings
